@@ -1,0 +1,35 @@
+
+.projects {
+    background-color: white;
+}
+
+.project-list {
+    padding: 6rem !important;
+    margin: 0;
+}
+
+.project {
+    width: calc(25% - 1.9rem);
+    display: inline-block;
+    margin: .8rem;
+}
+
+.project img {
+    /* box-sizing: border-box; */
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project img.active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    margin: auto;
+    transform: scale(2);
+}
+
+

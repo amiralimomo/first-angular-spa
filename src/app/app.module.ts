@@ -3,14 +3,31 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HomeComponent } from './home/home.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { RouterModule, Routes} from '@angular/router'
+ 
+const routes:Routes=[
+  {path:"",component:HomeComponent},
+  {path:"contact",component:ContactComponent},
+  {path:"aboutme",component:AboutMeComponent}
+]
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutMeComponent,
+    ContactComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

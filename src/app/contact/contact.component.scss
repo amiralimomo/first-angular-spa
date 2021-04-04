@@ -1,0 +1,57 @@
+.box {
+    max-width: 37.5rem;
+    margin: 2rem auto;
+    font-size: 100%;
+}
+
+.message-form {
+    width: 100%;
+}
+
+.input-box input:not([type="submit"]),
+textarea {
+    display: block;
+    padding: .7rem .7rem;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+}
+
+.input-box label {
+    display: block;
+    color: gray;
+    font-size: 1.1rem;
+    margin-bottom: .7rem;
+}
+
+.send-btn {
+    background-color: rgba(90, 222, 255, 0.938);
+    border: none;
+    color: white;
+}
+
+.call-table {
+    margin: 4rem auto;
+    width: 37.5rem;
+    border: 1px solid gray;
+}
+
+.call-table caption {
+    margin-bottom: .5rem;
+}
+
+.call-table tr,
+th,
+td {
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.call-table tr {
+    height: 2rem;
+}
+
+.call-table tr:nth-child(odd) {
+    background-color: rgb(185, 185, 185);
+}
